@@ -1,0 +1,12 @@
+@use 'variaveis';
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    p{
+        text-align: center;
+        color: variaveis.$corDeTitulo;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+.mais{
+
+    h2{
+        text-align: center;
+        color: variaveis.$corDeTitulo;
+        text-shadow: -2px 3px 3px rgba(22,89,126,1);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
+    }
+
+    .containerMais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+
+        img{
+            border-radius: 10px;
+            align-self: center;
+            padding-left: 50px;
+        }
+
+        p{
+            text-align: justify;
+            color: variaveis.$corDeTexto;
+            background-color: variaveis.$corDeFundoTexto;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}

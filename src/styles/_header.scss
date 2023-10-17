@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px ;
+    border-bottom: 2px variaveis.$corBordaFundo solid;
+
+    img{
+        width: 15%;
+    }
+
+    nav{
+
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+
+            li{
+                list-style: none;
+                padding: 0 50px;
+
+                a{
+                    color: variaveis.$corDeTitulo;
+                    text-shadow: -2px 3px 3px rgba(22,89,126,1);
+                    text-decoration: none;
+                    font-size: 30px;
+                    font-family: Nemo;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,16 @@
+@use 'variaveis';
+@use 'reset';
+@use 'header';
+@use 'sobre';
+@use 'personagens';
+@use 'mais';
+@use 'footer';
+
+body{
+    background-color: variaveis.$background;
+}
+
+@font-face {
+    font-family: Nemo;
+    src: url(../../assets/Findet\ Nemo.ttf);
+}
