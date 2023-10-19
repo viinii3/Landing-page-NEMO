@@ -10,6 +10,10 @@
         padding-bottom: 30px;
         font-family: 'Open Sans', sans-serif;
         font-size: 30px;
+
+        @media (max-width: 650px) {
+            font-size: 15px;
+        }
     }
 
     .containerPersonagens{
@@ -22,6 +26,23 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 15px;
+
+         @media (max-width: 650px) {
+            background-image: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: variaveis.$corDeFundoTexto;
+            margin: 20px;
+        }
+
+        @media (min-width: 650px) and (max-width: 1200px) {
+            background-image: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            background-color: variaveis.$corDeFundoTexto;
+            margin: 20px;
+        }
         
         &__cards{
             display: flex;
@@ -32,6 +53,34 @@
             margin: 20px;
             border: variaveis.$corBordaFundo solid 4px;
             border-radius: 8px;
+            
+            @media (max-width: 650px) {
+                max-width: 100%;
+                width: auto;
+                padding-bottom: 15px;
+                padding-right: 50px;
+
+                img{
+                    max-width: 100%;
+                    width: auto;
+                    padding-bottom: 15px;
+                    padding-right: 50px;
+                }
+            }
+
+            @media (min-width: 650px) and (max-width: 1200px) {
+                max-width: 100%;
+                width: auto;
+                padding-bottom: 15px;
+                padding-right: 50px;
+
+                img{
+                    max-width: 100%;
+                    width: auto;
+                    padding-bottom: 15px;
+                    padding-right: 50px;
+                }
+            }
 
             img{
                 height: 110px;
@@ -46,6 +95,10 @@
                 color: variaveis.$corDeTitulo;
                 font-size: 30px;
                 font-family: Nemo;
+
+                @media (max-width: 650px) {
+                    font-size: 20px;
+                }
             }
         }
     }
