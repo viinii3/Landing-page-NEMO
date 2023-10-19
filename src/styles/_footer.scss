@@ -8,5 +8,9 @@ footer{
         text-align: center;
         color: variaveis.$corDeTitulo;
         font-family: 'Open Sans', sans-serif;
+
+        @media (max-width: 650px) {
+            font-size: 10px;
+        }
     }
 }
